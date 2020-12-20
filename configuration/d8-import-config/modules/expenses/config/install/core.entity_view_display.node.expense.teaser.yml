@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.expense.field_ex_category
+    - field.field.node.expense.field_ex_credit
+    - field.field.node.expense.field_ex_date
+    - field.field.node.expense.field_ex_debit
+    - field.field.node.expense.field_ex_description
+    - field.field.node.expense.field_ex_file
+    - field.field.node.expense.field_ex_processed
+    - field.field.node.expense.field_ex_processed_text
+    - node.type.expense
+  module:
+    - user
+id: node.expense.teaser
+targetEntityType: node
+bundle: expense
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ex_category: true
+  field_ex_credit: true
+  field_ex_date: true
+  field_ex_debit: true
+  field_ex_description: true
+  field_ex_file: true
+  field_ex_processed: true
+  field_ex_processed_text: true

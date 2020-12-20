@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ex_processed
+    - node.type.expense
+id: node.expense.field_ex_processed
+field_name: field_ex_processed
+entity_type: node
+bundle: expense
+label: Processed
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Processed
+  off_label: 'Not processed'
+field_type: boolean

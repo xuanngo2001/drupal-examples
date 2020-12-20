@@ -1,0 +1,92 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.expense.field_ex_category
+    - field.field.node.expense.field_ex_credit
+    - field.field.node.expense.field_ex_date
+    - field.field.node.expense.field_ex_debit
+    - field.field.node.expense.field_ex_description
+    - field.field.node.expense.field_ex_file
+    - field.field.node.expense.field_ex_processed
+    - field.field.node.expense.field_ex_processed_text
+    - node.type.expense
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.expense.default
+targetEntityType: node
+bundle: expense
+mode: default
+content:
+  field_ex_category:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ex_credit:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_ex_date:
+    weight: 1
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_ex_debit:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_ex_description:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ex_file:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_ex_processed_text:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_ex_processed: true

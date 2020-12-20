@@ -1,0 +1,5 @@
+name: expenses
+description: description bla, bla.
+package: Custom
+type: module
+core: 8.x
