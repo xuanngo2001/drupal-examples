@@ -1,0 +1,1 @@
+https://drupalize.me/blog/201510/how-log-messages-drupal-8
