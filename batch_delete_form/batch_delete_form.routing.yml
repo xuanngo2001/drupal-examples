@@ -1,0 +1,7 @@
+batch_delete_form.my_form:
+  path: '/my_form'
+  defaults:
+    _form: 'Drupal\batch_delete_form\Form\MyForm'
+    _title: 'My Form'
+  requirements:
+    _permission: 'access content'

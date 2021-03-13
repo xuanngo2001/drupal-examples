@@ -1,0 +1,7 @@
+name: 'MODULE NAME'
+description: DESCRIPTION BLA BLA.
+package: PACKAGE_NAME
+type: module
+core: 8.x
+dependencies:
+  - field
