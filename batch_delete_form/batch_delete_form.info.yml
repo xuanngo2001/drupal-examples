@@ -1,4 +1,4 @@
-name: 'Batch delete nodes'
+name: 'Batch delete article nodes'
 description: DESCRIPTION BLA BLA.
 package: d8examples
 type: module

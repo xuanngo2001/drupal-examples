@@ -1,11 +1,7 @@
-batch_delete_form.my_form:
-  path: '/my_form'
+batch_delete_form.batch_delete_form:
+  path: '/batch_delete_form'
   defaults:
-    _form: 'Drupal\batch_delete_form\Form\MyForm'
-    _title: 'My Form'
+    _form: 'Drupal\batch_delete_form\Form\BatchDeleteForm'
+    _title: 'Batch delete article nodes'
   requirements:
     _permission: 'access content'
-
-Add example.
-
-Add example.

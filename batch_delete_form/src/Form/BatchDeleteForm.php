@@ -1,5 +1,5 @@
 <?php
-namespace Drupal\tradesteps\Form;
+namespace Drupal\batch_delete_form\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -46,7 +46,7 @@ class BatchDeleteForm extends FormBase {
         //      Delete 50 nodes per batch.
         $operations = [];
         foreach (array_chunk($all_nids, 50) as $smaller_batch_data) {
-            $operations[] = ['\Drupal\tradesteps\Form\BatchDeleteForm::batchDelete'
+            $operations[] = ['\Drupal\batch_delete_form\Form\BatchDeleteForm::batchDelete'
                                             , [$smaller_batch_data]];
         }
         
@@ -54,7 +54,7 @@ class BatchDeleteForm extends FormBase {
         $batch = array(
             'title' => t('Deleting nodes in batch...'),
             'operations' => $operations,
-            'finished' => '\Drupal\tradesteps\Form\BatchDeleteForm::batchFinished',
+            'finished' => '\Drupal\batch_delete_form\Form\BatchDeleteForm::batchFinished',
         );
         batch_set($batch);
     }
@@ -85,7 +85,7 @@ class BatchDeleteForm extends FormBase {
     }    
 
     public function getFormId() {
-        return 'tradesteps_batch_delete_form';
+        return 'batch_delete_form_batch_delete_form';
     }
 
 }
