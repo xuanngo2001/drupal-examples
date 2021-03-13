@@ -1,6 +1,6 @@
-name: 'MODULE NAME'
+name: 'Batch delete nodes'
 description: DESCRIPTION BLA BLA.
-package: PACKAGE_NAME
+package: d8examples
 type: module
 core: 8.x
 dependencies:

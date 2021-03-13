@@ -5,3 +5,7 @@ batch_delete_form.my_form:
     _title: 'My Form'
   requirements:
     _permission: 'access content'
+
+Add example.
+
+Add example.
